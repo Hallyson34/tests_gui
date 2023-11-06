@@ -5,11 +5,6 @@ async function RemovePlanTest() {
   const driver = new Builder().forBrowser("chrome").build();
 
   try {
-    const plan = {
-      name: "Plano Individual",
-      value: 150,
-    };
-
     await driver.get("http://localhost:3001");
     console.log("Navigated to the list page.");
 
