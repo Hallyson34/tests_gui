@@ -17,6 +17,7 @@ async function RemovePlanTest() {
     console.log("Removed plan.");
 
     try {
+      // eslint-disable-next-line no-unused-vars
       const trySelectPlanAfterDelete = await driver.findElement(By.id("row0"));
       console.log("Plan not removed!");
     } catch (NoSuchElementError) {
